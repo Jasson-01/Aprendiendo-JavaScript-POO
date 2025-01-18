@@ -13,19 +13,39 @@ class Mascota {
     this.#hambre = 0;
   }
 
-  // GETTER (obtener) -> Se usa para obtener las propiedades privadas seleccionadas de la clase. 
+  // GETTER (obtener) -> Se usa para obtener las propiedades privadas seleccionadas de la clase.
   obtenerNombre() {
     return this.#nombre;
   }
 
+  obtenerEspecie() {
+    return this.#especie;
+  }
+
   // SETTER (Establecer o configurar) -> Se usa para establecer o configurar las propiedades privadas de la clase.
+/*  
   establecerNombre(nombre) {
     if (nombre.length > 1) {
       this.#nombre = nombre;
     }
     console.log("El nombre debe ser mayor a 1 letra");
   }
+*/
+  establecerEspecie(especie) {
+    if (especie.length > 2) {
+      this.#especie = "Dinosaurio";
+    } else {
+      console.log("No es un Dinosaurio");
+    }
+  }
 
+  estadoEspecie() {
+   
+    console.log(` Encontre un gran ${this.obtenerEspecie()}`);
+    
+  }
+
+/*  
   jugar() {
     if (this.#energia > 0) {
       console.log(`${this.obtenerNombre()} está jugando y divirtiéndose`);
@@ -53,8 +73,14 @@ class Mascota {
       } de energia y ${this.#hambre} de hambre.`
     );
   }
+  */
 }
 
+const dino = new Mascota("dino", "LOBOX");
+dino.establecerEspecie("T-Rex")
+dino.estadoEspecie();
+
+/*
 const manchita = new Mascota("Manchita", "Perro");
 
 manchita.estado();
@@ -65,3 +91,4 @@ manchita.jugar();
 manchita.alimentar();
 manchita.jugar();
 manchita.estado();
+*/
