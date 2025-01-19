@@ -45,6 +45,6 @@ gatito.ronronear()
 /*
 NOTA:
 
--La palabra clave super se utiliza para llamar al constructor de la clase padre, para acceder a los métodos y propiedades de la clase padre, o para llamar a otros métodos del objeto padre.
+-La palabra clave "SUPER" se utiliza para llamar al "CONSTRUCTOR" de la clase padre, para acceder a los métodos y propiedades de la clase padre, o para llamar a otros métodos del objeto padre.
 
 */
